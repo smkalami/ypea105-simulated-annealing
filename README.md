@@ -1,7 +1,7 @@
 # Simulated Annealing in MATLAB
 
-<p align = "center">
-    <img src = "https://yarpiz.com/wp-content/uploads/2015/09/ypea105-simulated-annealing.jpg" alt = "Simulated Annealing in MATLAB">
+<p align="center">
+    <img src="https://yarpiz.com/wp-content/uploads/2015/09/ypea105-simulated-annealing.jpg" alt="Simulated Annealing in MATLAB">
 </p>
 
 This is an implementation of Simulated Annealing (SA) in MATLAB.
