@@ -61,7 +61,7 @@ for i = 1:nPop
     pop(i).Cost = CostFunction(pop(i).Position);
     
     % Update Best Solution
-    if pop(i).Cost< = BestSol.Cost
+    if pop(i).Cost <= BestSol.Cost
         BestSol = pop(i);
     end
     
@@ -100,19 +100,19 @@ for it = 1:MaxIt
         
         for i = 1:nPop
             
-            if newpop(i).Cost< = pop(i).Cost
+            if newpop(i).Cost <= pop(i).Cost
                 pop(i) = newpop(i);
                 
             else
                 DELTA = (newpop(i).Cost-pop(i).Cost)/pop(i).Cost;
                 P = exp(-DELTA/T);
-                if rand< = P
+                if rand <= P
                     pop(i) = newpop(i);
                 end
             end
             
             % Update Best Solution Ever Found
-            if pop(i).Cost< = BestSol.Cost
+            if pop(i).Cost <= BestSol.Cost
                 BestSol = pop(i);
             end
         

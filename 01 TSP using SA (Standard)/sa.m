@@ -59,7 +59,7 @@ for it = 1:MaxIt
         newsol.Position = CreateNeighbor(sol.Position);
         newsol.Cost = CostFunction(newsol.Position);
         
-        if newsol.Cost< = sol.Cost % If NEWSOL is better than SOL
+        if newsol.Cost <= sol.Cost % If NEWSOL is better than SOL
             sol = newsol;
             
         else % If NEWSOL is NOT better than SOL
@@ -67,14 +67,14 @@ for it = 1:MaxIt
             DELTA = (newsol.Cost-sol.Cost)/sol.Cost;
             
             P = exp(-DELTA/T);
-            if rand< = P
+            if rand <= P
                 sol = newsol;
             end
             
         end
         
         % Update Best Solution Ever Found
-        if sol.Cost< = BestSol.Cost
+        if sol.Cost <= BestSol.Cost
             BestSol = sol;
         end
     
